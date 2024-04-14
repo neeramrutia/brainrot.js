@@ -1,9 +1,9 @@
-import { api } from "@/trpc/server";
+//import { api } from "@/trpc/server";
 import { Loader2 } from "lucide-react";
 import { redirect } from "next/navigation";
 
 const Page = async () => {
-  await api.user.exists.mutate();
+  //await api.user.exists.mutate();
   redirect("/?loggedIn=true");
 
   return (
